@@ -378,7 +378,7 @@ section .title::after{
 /* clients section styling */
 
 .clients .title::after{
-    content: "what my clients say";
+    content: "what clients say";
 }
 .clients .carousel .card{
     background: #222;
