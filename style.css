@@ -322,7 +322,7 @@ section .title::after{
 
 #more {display: none;}
 
-.read_more{
+#readMoreBtn{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -336,7 +336,7 @@ section .title::after{
 }
 
 
-.read_more:hover{
+#readMoreBtn:hover{
     color: crimson;
     background: none;
 }
