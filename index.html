@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <!-- email.js function script -->
     <script type="text/javascript">
         (function() {
@@ -36,12 +37,13 @@
             });
         }
     </script>
+
     <!-- read more function script -->
     <script>
 function readMoreFunction(){
-      var dots = document.getElementById("dots_skills");
-      var moreText = document.getElementById("more_skills");
-      var btnText = document.getElementById("readMoreBtn_skills");
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("readMoreBtn");
 
       if (dots.style.display === "none") {
         dots.style.display = "inline";
@@ -54,108 +56,7 @@ function readMoreFunction(){
       }
     }
 </script>
-    <script>
-function readMoreFunction(){
-      var dots = document.getElementById("dots_surendra");
-      var moreText = document.getElementById("more_surendra");
-      var btnText = document.getElementById("readMoreBtn_surendra");
 
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-</script>
-    <script>
-function readMoreFunction(){
-      var dots = document.getElementById("dots_rohit");
-      var moreText = document.getElementById("more_rohit");
-      var btnText = document.getElementById("readMoreBtn_rohit");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-</script>
-    <script>
-function readMoreFunction(){
-      var dots = document.getElementById("dots_navin");
-      var moreText = document.getElementById("more_navin");
-      var btnText = document.getElementById("readMoreBtn_navin");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-</script>
-    <script>
-function readMoreFunction(){
-      var dots = document.getElementById("dots_hitesh");
-      var moreText = document.getElementById("more_hitesh");
-      var btnText = document.getElementById("readMoreBtn_hitesh");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-</script>
-    <script>
-function readMoreFunction(){
-      var dots = document.getElementById("dots_jayesh");
-      var moreText = document.getElementById("more_jayesh");
-      var btnText = document.getElementById("readMoreBtn_jayesh");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-</script>
-    <script>
-function readMoreFunction(){
-      var dots = document.getElementById("dots_pramit");
-      var moreText = document.getElementById("more_pramit");
-      var btnText = document.getElementById("readMoreBtn_pramit");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-</script>
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -245,8 +146,8 @@ function readMoreFunction(){
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>I use HTML, CSS, and JavaScript to produce responsive websites and web apps that provide users the best and most appropriate experience suited to their device and browser. I write standards based code that is semantic, accessible, search-engine friendly, easy to mai<span id="dots_skills">...</span><span id="more_skills">ntain, cross browser compatible, and performant. Building a future-proof and easy-to-maintain website is achieved by breaking down a web page into its smallest pieces, often called components, and building them in a way that exists outside the context of the design they first appear in. This allows for components that can be re-used in other areas of a website as it grows and makes the intention easier for other developers to understand and test. </span></p>
-                    <button class="read_more" onclick="readMoreFunction()" id="readMoreBtn_skills">Read more</button>
+                    <p>I use HTML, CSS, and JavaScript to produce responsive websites and web apps that provide users the best and most appropriate experience suited to their device and browser. I write standards based code that is semantic, accessible, search-engine friendly, easy to mai<span id="dots">...</span><span id="more">ntain, cross browser compatible, and performant. Building a future-proof and easy-to-maintain website is achieved by breaking down a web page into its smallest pieces, often called components, and building them in a way that exists outside the context of the design they first appear in. This allows for components that can be re-used in other areas of a website as it grows and makes the intention easier for other developers to understand and test. </span></p>
+                    <button onclick="readMoreFunction()" id="readMoreBtn">Read more</button>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -291,48 +192,42 @@ function readMoreFunction(){
                     <div class="box">
                         <img src="images/profile-surendra.jpeg" alt="">
                         <div class="text">Surendra Ediga</div>
-                        <p>Working with Roshan was better than expected and we h<span id="dots_surendra">...</span><span id="more_surendra">ad really high expectations. Time after time, and without us asking, he added enhancements and improvements that resulted in a better end product for us and our clients. </span></p>
-                        <button onclick="readMoreFunction()" id="readMoreBtn_surendra">Read more</button>
+                        <p>Working with Roshan was better than expected and we had really high expectations. Time after time, and without us asking, he added enhancements and improvements that resulted in a better end product for us and our clients.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-rohit.jpeg" alt="">
                         <div class="text">Rohit Kanukula</div>
-                        <p>Roshan is an incredibly talented developer but what r<span id="dots_rohit">...</span><span id="more_rohit">eally makes him stand out is his work ethic and steady approach. </span></p>
-                        <button onclick="readMoreFunction()" id="readMoreBtn_rohit">Read more</button>
+                        <p>Roshan is an incredibly talented developer but what really makes him stand out is his work ethic and steady approach.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-navin.jpeg" alt="">
                         <div class="text">Navin Singh</div>
-                        <p>Working with Roshan has been a refreshing change. He i<span id="dots_navin">...</span><span id="more_navin">s an authority on web development and is clearly in the upper percentile in terms of developer qualifications. </span></p>
-                        <button onclick="readMoreFunction()" id="readMoreBtn_navin">Read more</button>
+                        <p>Working with Roshan has been a refreshing change. He is an authority on web development and is clearly in the upper percentile in terms of developer qualifications.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-hitesh.jpeg" alt="">
                         <div class="text">Hitesh Chaurasia</div>
-                        <p>Roshan's invaluable suggestions and improvements hel<span id="dots_hitesh">...</span><span id="more_hitesh">ped us to create a stable & cross platform site. </span></p>
-                        <button onclick="readMoreFunction()" id="readMoreBtn_hitesh">Read more</button>
+                        <p>Roshan's invaluable suggestions and improvements helped us to create a stable & cross platform site.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-jayesh.jpeg" alt="">
                         <div class="text">Jayesh Bobade</div>
-                        <p>Not only was Roshan’s work on-time and to spec, he pa<span id="dots_jayesh">...</span><span id="more_jayesh">ys attention to improve the aesthetics of the site as well as the functionality. </span></p>
-                        <button onclick="readMoreFunction()" id="readMoreBtn_jayesh">Read more</button>
+                        <p>Not only was Roshan’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-pramit.jpeg" alt="">
                         <div class="text">Pramit Sonwane</div>
-                        <p>Throughout the entire process Roshan is responsive, an<span id="dots_pramit">...</span><span id="more_pramit">d willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again. </span></p>
-                        <button onclick="readMoreFunction()" id="readMoreBtn_pramit">Read more</button>
+                        <p>Throughout the entire process Roshan is responsive, and willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.</p>
                     </div>
                 </div>
             </div>
