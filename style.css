@@ -59,7 +59,7 @@ section .title{
 section .title::before{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
     width: 200px;
     height: 3px;
@@ -86,7 +86,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbar .sticky{
     padding: 15px 0;
     background: crimson;
 }
@@ -104,7 +104,7 @@ section .title::after{
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbar .sticky .logo a span{
     color: #fff;
 }
 .navbar .menu li{
@@ -122,7 +122,7 @@ section .title::after{
 .navbar .menu li a:hover{
     color: crimson;
 }
-.navbar.sticky .menu li a:hover{
+.navbar .sticky .menu li a:hover{
     color: #fff;
 }
 
@@ -152,7 +152,7 @@ section .title::after{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+.scroll-up-btn .show{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
@@ -319,7 +319,10 @@ section .title::after{
 .skills .skills-content .left p{
     text-align: justify;
 }
-.skills .skills-content .left a{
+
+#more {display: none;}
+
+#readMoreBtn{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -331,7 +334,9 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
+
+
+#readMoreBtn:hover{
     color: crimson;
     background: none;
 }
@@ -430,11 +435,11 @@ section .title::after{
     border: 2px solid crimson!important;
     transition: all 0.3s ease;
 }
-.owl-dot.active{
+.owl-dot .active{
     width: 35px;
     border-radius: 14px;
 }
-.owl-dot.active,
+.owl-dot .active,
 .owl-dot:hover{
     background: crimson!important;
 }
@@ -582,7 +587,7 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    .navbar .menu .active{
         left: 0;
     }
     .navbar .menu li{
