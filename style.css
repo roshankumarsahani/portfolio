@@ -11,6 +11,12 @@ html{
     scroll-behavior: smooth;
 }
 
+.redfavicon{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
