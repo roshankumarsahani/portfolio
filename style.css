@@ -11,10 +11,8 @@ html{
     scroll-behavior: smooth;
 }
 
-.redfavicon{
-    font-size: 50px;
+.fa-registered{
     color: crimson;
-    transition: color 0.3s ease;
 }
 
 /* custom scroll bar */
