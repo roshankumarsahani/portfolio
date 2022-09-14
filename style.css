@@ -466,6 +466,15 @@ section .title::after{
 .contact .contact-content .left .icons{
     margin: 10px 0;
 }
+
+.name_logo{
+    padding-right: 4px;
+}
+
+.address_logo{
+    padding-right: 6px;
+}
+
 .contact .contact-content .row{
     display: flex;
     height: 65px;
