@@ -72,3 +72,40 @@ $(document).ready(function(){
         }
     });
 });
+
+    // read more function script
+function readMoreFunction(){
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readMoreBtn");
+
+if (dots.style.display === "none") {
+  dots.style.display = "inline";
+  btnText.innerHTML = "Read more";
+  moreText.style.display = "none";
+} else {
+  dots.style.display = "none";
+  btnText.innerHTML = "Read less";
+  moreText.style.display = "inline";
+}
+}
+
+    // email.js function script
+(function() {
+    emailjs.init('5FyjT0Ltle7jSIrbc');
+})();
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('email_service', 'contact_form', this)
+            .then(function() {
+                console.log('SUCCESS!');
+                alert("Your Message Has Been Sent Succesfully");
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+}
